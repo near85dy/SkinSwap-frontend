@@ -25,19 +25,11 @@ body {
   background-blend-mode: darken;
 }
 
-.header
-{
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
-  background-color: #333;
-}
-
 .login-button button {
   background-color: #4CAF50;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 1rem 1.7rem;
   cursor: pointer;
   font-size: 16px;
 }
@@ -54,29 +46,47 @@ header {
 }
 
 .nav-main {
-  width: 200px;
+  width: 150px;
   background-color: #f4f4f4;
-  padding: 20px;
+  padding: 2rem;
   position: fixed;
-  top: 0;
-  left: 0;
   height: 100%;
 }
 
-.nav-main ul {
+.nav-main ul 
+{
   list-style-type: none;
 }
 
 .nav-main li {
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
-.nav-main a {
+.nav-main a 
+{
   text-decoration: none;
   color: #333;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .nav-main a:hover {
   color: #4CAF50;
+}
+
+.profile 
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
+
+.header-logo
+{
+  margin: 0.5rem 50rem 0rem 0rem;
+}
+
+.header-logo-text
+{
+  font-size: 150%;
+  color: #FFFFFF;
 }
