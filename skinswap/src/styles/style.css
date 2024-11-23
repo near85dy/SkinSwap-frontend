@@ -1,92 +1,247 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+font-family: Arial, sans-serif;
+display: flex;
+flex-direction: column;
+height: 100vh;
 }
 
 .ul
 {
-  margin-left: 1000px;
+margin-left: 1000px;
 }
 
 .nav {
-  position: absolute;
-  left: 60;
+position: absolute;
+left: 60;
 }
 
 .background
 {
-  background-color: #26538f;
-  background-blend-mode: darken;
+background-color: #26538f;
+background-blend-mode: darken;
 }
 
 .login-button button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 1rem 1.7rem;
-  cursor: pointer;
-  font-size: 16px;
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 1rem 1.7rem;
+cursor: pointer;
+font-size: 16px;
 }
 
 header {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
-  background-color: #333;
+display: flex;
+justify-content: flex-end;
+padding: 10px;
+background-color: #333;
 }
 
 .login-button button:hover {
-  background-color: #45a049;
+background-color: #45a049;
 }
 
 .nav-main {
-  width: 150px;
-  background-color: #f4f4f4;
-  padding: 2rem;
-  position: fixed;
-  height: 100%;
+width: 150px;
+background-color: #f4f4f4;
+padding: 2rem;
+position: fixed;
+height: 100%;
 }
 
 .nav-main ul 
 {
-  list-style-type: none;
+list-style-type: none;
 }
 
 .nav-main li {
-  margin: 40px 0;
+margin: 40px 0;
 }
 
 .nav-main a 
 {
-  text-decoration: none;
-  color: #333;
-  font-size: 20px;
+text-decoration: none;
+color: #333;
+font-size: 20px;
 }
 
 .nav-main a:hover {
-  color: #4CAF50;
+color: #4CAF50;
 }
 
 .profile 
 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 6em
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em
 }
 
 .header-logo
 {
-  margin: 0.5rem 50rem 0rem 0rem;
+margin: 0.5rem 50rem 0rem 0rem;
 }
 
 .header-logo-text
 {
-  font-size: 150%;
-  color: #FFFFFF;
+font-size: 150%;
+color: #FFFFFF;
+}
+
+
+
+
+header {
+display: flex;
+padding: 2% 6%;
+justify-content: space-between;
+align-items: center;
+background-color: #222;
+color: white;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo a {
+text-decoration: none;
+color: #fff;
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.header-links {
+display: flex;
+align-items: center;
+}
+
+.login-form {
+margin-right: 20px;
+}
+
+.login-button {
+background-color: #007bff;
+border: none;
+color: white;
+padding: 10px 15px;
+font-size: 1rem;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s;
+}
+
+.login-button:hover {
+background-color: #0056b3;
+}
+
+.menu {
+list-style-type: none;
+display: flex;
+margin: 0;
+padding: 0;
+}
+
+.menu{
+margin: 0 10px;
+}
+
+.menu a {
+text-decoration: none;
+color: white;
+font-size: 1rem;
+transition: color 0.3s;
+}
+
+menu a:hover {
+color: #007bff;
+}
+.logoS{
+font-size: 2rem;
+}
+.wap{
+margin-left: 3rem;
+}
+.header-logo {
+font-family: Arial, sans-serif;
+font-weight: bold;
+font-size: 24px;
+display: flex;
+align-items: center;
+color: white;
+
+padding: 10px 20px;
+}
+
+.logo-skin {
+color: white; /* White text */
+}
+
+.logo-swap {
+color: #60A5FA; /* Light blue text */
+}
+
+.header-links {
+display: flex;
+align-items: center;
+}
+
+.login-form {
+margin-right: 20px;
+}
+
+.login-button {
+background-color: #2563EB; /* Blue button */
+color: white;
+border: none;
+padding: 5px 10px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.menu {
+list-style: none;
+display: flex;
+gap: 15px;
+}
+
+.menu li a {
+color: white;
+text-decoration: none;
+}
+
+.menu li a:hover {
+text-decoration: underline;
+}
+/* General Logo Styling */
+.header-logo {
+display: flex;
+align-items: center;
+gap: 5px;
+color: white;
+padding: 5px;
+}
+
+.logo-large-s {
+font-size: 80px; /* Big 'S' */
+font-weight: bold;
+line-height: 0.8; /* Adjust vertical alignment */
+}
+
+.logo-text {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.logo-kin {
+margin: -5px;
+font-size: 32px; /* 'kin' font size */
+font-weight: 400; /* Normal weight */
+}
+
+.logo-wap {
+margin: -5px;
+font-size: 32px; /* 'wap' font size */
+font-weight: 400; /* Normal weight */
 }
