@@ -2,19 +2,25 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './styles/style.css'
-import Navigation from './Navigation'
-import Header from './Header'
+import Navigation from './components/Navigation'
+import Header from './components/Header'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Profile from './Profile'
+import SteamCallback from './components/SteamCallback'
+import MyProfile from './components/MyProfile'
 
 function App() 
 {
-  return ( 
-      <div>
-        <Header />
-        <Profile />
-        <Navigation />
-      </div>
+  return (  
+        <Router>
+          <Header />
+          <Navigation />
+          <div class="content">
+            <Routes>
+                <Route path="/callback" element={<SteamCallback />} />
+                <Route path="/profile" element={<><MyProfile /></>} />
+            </Routes>
+          </div>
+        </Router>
       )
 }
 
