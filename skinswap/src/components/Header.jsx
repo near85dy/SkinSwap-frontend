@@ -1,4 +1,49 @@
-function Header() 
+function Header() {
+  const API_URL = "http://localhost:8080/api";
+  const handleLoginButton = async () => {
+      try {
+          const response = await fetch(API_URL + "/auth/steam/login");
+          const data = await response.json();
+
+          if (data.steamLoginUrl) {
+              window.location.href = data.steamLoginUrl;
+          }
+      } catch (error) {
+          console.error("Error fetching Steam login URL:", error);
+      }
+  };
+
+  return (
+      <header>
+          <div className="header-logo">
+              {/* Logo Container */}
+              <div className="logo-container">
+                  {/* Triangle Background */}
+                  <div className="logo-shape">
+                      <span className="lightning-icon">⚡</span>
+                  </div>
+                  {/* Logo Text */}
+                  <div className="logo-text">
+                      <h1 className="logo-title">CSTRADE</h1>
+                    
+                  </div>
+              </div>
+          </div>
+          <nav className="header-links" id="header-links">
+              <form className="login-form">
+                  <button onClick={handleLoginButton} className="login-button">Вход</button>
+              </form>
+              <ul className="menu">
+                  <li><a href="profile">Profile</a></li>
+              </ul>
+          </nav>
+      </header>
+  );
+}
+
+export default Header;
+
+  /*function Header() 
 {
   const API_URL = "http://localhost:8080/api";
   const handleLoginButton = async () =>
@@ -33,7 +78,7 @@ function Header()
             <button onClick={handleLoginButton} className="login-button">Вход</button>
           </form>
           <ul className="menu">
-            <li><a href="profile.html">Profile</a></li>
+            <li><a href="profile">Profile</a></li>
           </ul>
         </nav>
       </header>
@@ -41,4 +86,4 @@ function Header()
   }
   
   export default Header;
-  
+   */
