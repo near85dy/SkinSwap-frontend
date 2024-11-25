@@ -6,11 +6,6 @@ function Navigation() {
         <nav className="nav-main">
             <ul>
                 <li>
-                    <a className="nav-button-text" href="/profile">
-                        <FontAwesomeIcon icon={faUser} /> Профиль
-                    </a>
-                </li>
-                <li>
                     <a className="nav-button-text" href="/chats">
                         <FontAwesomeIcon icon={faComments} /> Люди
                     </a>
