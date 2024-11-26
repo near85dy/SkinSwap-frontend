@@ -7,7 +7,7 @@ import Header from './components/Header'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SteamCallback from './components/SteamCallback'
 import MyProfile from './components/MyProfile'
-
+import Friends from './components/Friends'
 function App() 
 {
   return (  
@@ -18,6 +18,7 @@ function App()
             <Routes>
                 <Route path="/callback" element={<SteamCallback />} />
                 <Route path="/profile" element={<><MyProfile /></>} />
+                <Route path="/relationships" element={<Friends />} />
             </Routes>
           </div>
         </Router>
