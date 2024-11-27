@@ -34,10 +34,11 @@ export async function getLocalUser()
             },
             body: null,
         });
+        const data = await response.json();
+        value = data;        
         if (!response.ok) {
             throw new Error('Failed to fetch profile');
         }
-        value = response.json();
     }
     catch (error)
     {
@@ -47,7 +48,28 @@ export async function getLocalUser()
     return value;
 };
 
-export const getUserById = async (id) =>
+export async function sendFriendRequest(_steamId)
 {
-    
-}
+    let value = null;
+    try 
+    {
+        const response = await fetch(API_URL+"/relationships/send", 
+        {
+            method: 'POST',
+            credentials: 'include', 
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({steamId: _steamId}),
+        });
+        if (!response.ok) {
+            throw new Error('Failed to fetch profile');
+        }
+    }
+    catch (error)
+    {
+        console.error('Ошибка при выполнении GET-запроса:', error);
+        return error;
+    }
+    return value;
+};

@@ -1,575 +1,477 @@
-* {
+
+header {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  }
+  
+  .header-links {
+  display: flex;
+  align-items: center;
+  }
+  
+  .login-form {
+  margin-right: 20px;
+  }
+  
+  .login-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+  background-color: #0056b3;
+  }
+  
+  .menu {
+  list-style-type: none;
+  display: flex;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-font-family: Arial, sans-serif;
-display: flex;
-flex-direction: column;
-height: 100vh;
-}
-
-.ul
-{
-margin-left: 1000px;
-}
-
-.nav {
-position: absolute;
-left: 60;
-}
-
-.background
-{
-background-color: #26538f;
-background-blend-mode: darken;
-}
-
-.login-button button {
-background-color: #4CAF50;
-color: white;
-border: none;
-padding: 1rem 1.7rem;
-cursor: pointer;
-font-size: 16px;
-}
-
-header {
-display: flex;
-justify-content: flex-end;
-padding: 10px;
-background-color: #333;
-}
-
-.login-button button:hover {
-background-color: #45a049;
-}
-
-.nav-main {
-width: 150px;
-background-color: #f4f4f4;
-padding: 2rem;
-position: fixed;
-height: 100%;
-}
-
-.nav-main ul 
-{
-list-style-type: none;
-}
-
-.nav-main li {
-margin: 40px 0;
-}
-
-.nav-main a 
-{
-text-decoration: none;
-color: #333;
-font-size: 20px;
-}
-
-.nav-main a:hover {
-color: #4CAF50;
-}
-
-.profile 
-{
-  margin-left: auto;
-  margin-right: auto;
-  width: 6em
-}
-
-.header-logo
-{
-margin: 0.5rem 50rem 0rem 0rem;
-}
-
-.header-logo-text
-{
-font-size: 150%;
-color: #FFFFFF;
-}
-
-
-
-
-header {
-display: flex;
-padding: 2% 6%;
-justify-content: space-between;
-align-items: center;
-background-color: #222;
-color: white;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.header-logo a {
-text-decoration: none;
-color: #fff;
-font-size: 1.5rem;
-font-weight: bold;
-}
-
-.header-links {
-display: flex;
-align-items: center;
-}
-
-.login-form {
-margin-right: 20px;
-}
-
-.login-button {
-background-color: #007bff;
-border: none;
-color: white;
-padding: 10px 15px;
-font-size: 1rem;
-cursor: pointer;
-border-radius: 4px;
-transition: background-color 0.3s;
-}
-
-.login-button:hover {
-background-color: #0056b3;
-}
-
-.menu {
-list-style-type: none;
-display: flex;
-margin: 0;
-padding: 0;
-}
-
-.menu{
-margin: 0 10px;
-}
-
-.menu a {
-text-decoration: none;
-color: white;
-font-size: 1rem;
-transition: color 0.3s;
-}
-
-menu a:hover {
-color: #007bff;
-}
-.logoS{
-font-size: 2rem;
-}
-.wap{
-margin-left: 3rem;
-}
-.header-logo {
-font-family: Arial, sans-serif;
-font-weight: bold;
-font-size: 24px;
-display: flex;
-align-items: center;
-color: white;
-
-padding: 10px 20px;
-}
-
-.logo-skin {
-color: white; /* White text */
-}
-
-.logo-swap {
-color: #60A5FA; /* Light blue text */
-}
-
-.header-links {
-display: flex;
-align-items: center;
-}
-
-.login-form {
-margin-right: 20px;
-}
-
-.login-button {
-background-color: #2563EB; /* Blue button */
-color: white;
-border: none;
-padding: 5px 10px;
-border-radius: 5px;
-cursor: pointer;
-}
-
-.menu {
-list-style: none;
-display: flex;
-gap: 15px;
-}
-
-.menu li a {
-color: white;
-text-decoration: none;
-}
-
-.menu li a:hover {
-text-decoration: underline;
-}
-/* General Logo Styling */
-.header-logo {
-display: flex;
-align-items: center;
-gap: 5px;
-color: white;
-padding: 5px;
-}
-
-.logo-large-s {
-font-size: 80px; /* Big 'S' */
-font-weight: bold;
-line-height: 0.8; /* Adjust vertical alignment */
-}
-
-.logo-text {
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-
-.logo-kin {
-margin: -5px;
-font-size: 32px; /* 'kin' font size */
-font-weight: 400; /* Normal weight */
-}
-
-.logo-wap {
-margin: -5px;
-font-size: 32px; /* 'wap' font size */
-font-weight: 400; /* Normal weight */
-}
-/*MY PROFILE DESIGN!!!! */
-.profile-container {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.profile-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.profile-left {
-  display: flex;
-  align-items: center;
-}
-
-.profile-avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-right: 20px;
-  border: 2px solid #ddd;
-}
-
-.profile-info h3 {
-  margin: 0;
-  font-size: 18px;
-}
-
-.profile-info p {
-  margin: 4px 0;
-  color: #666;
-}
-
-.profile-right p {
-  margin: 8px 0;
-  color: #333;
-}
-
-.profile-right a {
-  color: #007bff;
+  }
+  
+  .menu{
+  margin: 0 10px;
+  }
+  
+  .menu a {
   text-decoration: none;
-}
-
-.profile-right a:hover {
-  text-decoration: underline;
-}
-
-.trade-form {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.trade-form input {
-  width: 70%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.trade-form button {
-  padding: 10px 20px;
-  background-color: #007bff;
   color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.trade-form button:hover {
-  background-color: #0056b3;
-}
-
-.error {
-  color: red;
-  text-align: center;
-}
-
-.loading {
-  text-align: center;
-  color: #666;
-}
-.profile-right button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.profile-right button:hover {
-  background-color: #0056b3;
-}
-
-.profile-right input {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-/* Global Styles */
-
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background: linear-gradient(180deg, #f9fafe, #f1f5f9);
-  color: #1f2937;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  line-height: 1.6;
-}
-
-/* Sidebar Navigation */
-.nav-main {
-  width: 250px;
-  background: linear-gradient(145deg, #1e40af, #3b82f6);
-  color: #fff;
-  position: fixed;
-  height: 100%;
-  padding: 2rem 1rem;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s;
-}
-
-.nav-main ul {
-  list-style: none;
-}
-
-.nav-main li {
-  margin: 20px 0;
-  transition: transform 0.2s ease-in-out;
-}
-
-.nav-main li:hover {
-  transform: scale(1.05);
-}
-
-.nav-main a {
-  text-decoration: none;
-  color: #f9fafb;
-  font-size: 18px;
-  padding: 10px;
-  display: block;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.nav-main a:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-/* Header Styles */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: linear-gradient(90deg, #1e3a8a, #2563eb);
-  color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.header-logo {
-  display: flex;
-  align-items: center;
-}
-
-.header-logo img {
-  width: 50px;
-  margin-right: 10px;
-}
-
-.header-logo h1 {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-.header-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.header-links a {
-  color: white;
-  text-decoration: none;
   font-size: 1rem;
-  font-weight: bold;
   transition: color 0.3s;
-}
-
-.header-links a:hover {
-  color: #a5b4fc;
-}
-
-.login-button {
-  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  }
+  
+  menu a:hover {
+  color: #007bff;
+  }
+  .logoS{
+  font-size: 2rem;
+  }
+  .wap{
+  margin-left: 3rem;
+  }
+  .header-logo {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  color: white;
+  
+  padding: 10px 20px;
+  }
+  
+  .logo-skin {
+  color: white; /* White text */
+  }
+  
+  .logo-swap {
+  color: #60A5FA; /* Light blue text */
+  }
+  
+  .header-links {
+  display: flex;
+  align-items: center;
+  }
+  
+  .login-form {
+  margin-right: 20px;
+  }
+  
+  .login-button {
+  background-color: #2563EB; /* Blue button */
   color: white;
   border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: all 0.3s ease-in-out;
-}
-
-.login-button:hover {
-  background: linear-gradient(90deg, #60a5fa, #3b82f6);
-  transform: scale(1.05);
-}
-
-/* Profile Section */
-.profile-container {
-  margin-left: 280px;
-  padding: 2rem;
-  max-width: 900px;
-}
-
-.profile-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+  }
+  
+  .menu {
+  list-style: none;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.profile-avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 3px solid #3b82f6;
-}
-
-.profile-info h3 {
-  font-size: 1.5rem;
-  color: #1f2937;
-}
-
-.profile-info p {
-  color: #6b7280;
-}
-
-.profile-right a {
-  color: #2563eb;
+  gap: 15px;
+  }
+  
+  .menu li a {
+  color: white;
   text-decoration: none;
-}
-
-.profile-right a:hover {
+  }
+  
+  .menu li a:hover {
   text-decoration: underline;
-}
-
-/* Trade Form */
-.trade-form {
-  margin-top: 20px;
+  }
+  /* General Logo Styling */
+  .header-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  padding: 5px;
+  }
+  
+  .logo-large-s {
+  font-size: 80px; /* Big 'S' */
+  font-weight: bold;
+  line-height: 0.8; /* Adjust vertical alignment */
+  }
+  
+  .logo-text {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-.trade-form input {
-  padding: 0.8rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-.trade-form button {
-  padding: 0.8rem;
-  background: linear-gradient(90deg, #3b82f6, #60a5fa);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background 0.3s ease-in-out;
-}
-
-.trade-form button:hover {
-  background: linear-gradient(90deg, #60a5fa, #3b82f6);
-  transform: scale(1.05);
-}
-
-/* Mobile View */
-@media (max-width: 768px) {
-  .nav-main {
-    width: 100%;
-    height: auto;
-    position: relative;
-    padding: 1rem 0;
+  justify-content: center;
+  }
+  
+  .logo-kin {
+  margin: -5px;
+  font-size: 32px; /* 'kin' font size */
+  font-weight: 400; /* Normal weight */
+  }
+  
+  .logo-wap {
+  margin: -5px;
+  font-size: 32px; /* 'wap' font size */
+  font-weight: 400; /* Normal weight */
+  }
+  /*MY PROFILE DESIGN!!!! */
+  .profile-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+  }
+  
+  .profile-info h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .profile-info p {
+    margin: 4px 0;
+    color: #666;
+  }
+  
+  .profile-right p {
+    margin: 8px 0;
+    color: #333;
+  }
+  
+  .profile-right a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .profile-right a:hover {
+    text-decoration: underline;
+  }
+  
+  .trade-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .trade-form input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .trade-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .trade-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: red;
     text-align: center;
   }
-
-  .profile-container {
-    margin: 0 auto;
-    padding: 1rem;
+  
+  .loading {
+    text-align: center;
+    color: #666;
   }
-
-  .profile-card {
+  .profile-right button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .profile-right button:hover {
+    background-color: #0056b3;
+  }
+  
+  .profile-right input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  /* Global Styles */
+  
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(180deg, #f9fafe, #f1f5f9);
+    color: #1f2937;
+    display: flex;
     flex-direction: column;
+    height: 100vh;
+    line-height: 1.6;
+  }
+  
+  /* Sidebar Navigation */
+  .nav-main {
+    width: 250px;
+    background: linear-gradient(145deg, #1e40af, #3b82f6);
+    color: #fff;
+    position: fixed;
+    height: 100%;
+    padding: 2rem 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+  }
+  
+  .nav-main ul {
+    list-style: none;
+  }
+  
+  .nav-main li {
+    margin: 20px 0;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-main li:hover {
+    transform: scale(1.05);
+  }
+  
+  .nav-main a {
+    text-decoration: none;
+    color: #f9fafb;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-main a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #1e3a8a, #2563eb);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-logo {
+    display: flex;
     align-items: center;
   }
-
+  
+  .header-logo img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .header-logo h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .header-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .header-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .header-links a:hover {
+    color: #a5b4fc;
+  }
+  
+  .login-button {
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .login-button:hover {
+    background: linear-gradient(90deg, #60a5fa, #3b82f6);
+    transform: scale(1.05);
+  }
+  
+  /* Profile Section */
+  .profile-container {
+    margin-left: 280px;
+    padding: 2rem;
+    max-width: 900px;
+  }
+  
+  .profile-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #3b82f6;
+  }
+  
+  .profile-info h3 {
+    font-size: 1.5rem;
+    color: #1f2937;
+  }
+  
+  .profile-info p {
+    color: #6b7280;
+  }
+  
+  .profile-right a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  
+  .profile-right a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Trade Form */
   .trade-form {
-    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
-
-  .trade-form input,
+  
+  .trade-form input {
+    padding: 0.8rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
   .trade-form button {
-    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
   }
-}
+  
+  .trade-form button:hover {
+    background: linear-gradient(90deg, #60a5fa, #3b82f6);
+    transform: scale(1.05);
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .nav-main {
+      width: 100%;
+      height: auto;
+      position: relative;
+      padding: 1rem 0;
+      text-align: center;
+    }
+  
+    .profile-container {
+      margin: 0 auto;
+      padding: 1rem;
+    }
+  
+    .profile-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .trade-form {
+      align-items: center;
+    }
+  
+    .trade-form input,
+    .trade-form button {
+      width: 100%;
+    }
+  }

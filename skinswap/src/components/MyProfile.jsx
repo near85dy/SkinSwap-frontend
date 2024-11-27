@@ -56,7 +56,7 @@ const MyProfile = () => {
               className="profile-avatar"
             />
             <h3 className="profile-username">{profileData.username}</h3>
-            <p>ID: {profileData.id}</p>
+            <p>{profileData.steamid}</p>
           </div>
           <div className="profile-right">
             <p>
